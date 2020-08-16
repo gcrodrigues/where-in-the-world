@@ -18,7 +18,7 @@ const FlagCard: React.FC<Props> = ({
   capital,
 }) => {
   return (
-    <Container>
+    <Container to={`/details/${country}`}>
       <Image>
         <img src={image} alt={country} />
       </Image>

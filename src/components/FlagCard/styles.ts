@@ -1,30 +1,41 @@
 import styled from "styled-components";
-
-export const Container = styled.div`
+import { Link } from "react-router-dom";
+export const Container = styled(Link)`
   width: 100%;
   height: 100%;
   max-width: 400px;
   min-width: 240px;
-  border-radius: 5px;
+
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
+  border-radius: 5px;
   box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.text};
+
+  &:hover {
+    transform: scale(1.01);
+  }
 `;
 
 export const Image = styled.div`
   width: 100%;
   max-width: 400px;
   height: 100%;
+  max-height: 200px;
   background-position: center;
   border-radius: 5px 5px 0 0;
 
   img {
     border-radius: 5px 5px 0 0;
     width: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
     height: 100%;
-    max-height: 200px;
   }
 `;
 
