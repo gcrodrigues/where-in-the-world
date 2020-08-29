@@ -13,22 +13,24 @@ const Header: React.FC = () => {
 
   return (
     <Container>
-      <h1>Where in the world?</h1>
       <div>
-        <FaMoon style={{ marginRight: 5 }} />
-        <Switch
-          onChange={() => toggleTheme()}
-          checked={title === "dark" ? false : true}
-          checkedIcon={false}
-          uncheckedIcon={false}
-          height={20}
-          width={50}
-          handleDiameter={20}
-          color="#fff"
-          onColor={colors.switchOn}
-          offColor={darken(0.25, colors.switchOn)}
-        />
-        <FaSun style={{ marginLeft: 5 }} />
+        <h1>Where in the world?</h1>
+        <div>
+          <FaMoon style={{ marginRight: 5 }} />
+          <Switch
+            onChange={() => toggleTheme()}
+            checked={title === "dark" ? false : true}
+            checkedIcon={false}
+            uncheckedIcon={false}
+            height={20}
+            width={50}
+            handleDiameter={20}
+            color="#fff"
+            onColor={colors.switchOn}
+            offColor={darken(0.25, colors.switchOn)}
+          />
+          <FaSun style={{ marginLeft: 5 }} />
+        </div>
       </div>
     </Container>
   );
