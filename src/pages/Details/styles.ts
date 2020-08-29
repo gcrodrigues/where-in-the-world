@@ -2,10 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   main {
-    padding: 40px 30px;
+    padding: 40px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
 
     @media (min-width: 501px) {
       padding: 70px;
+    }
+
+    @media (min-width: 1320px) {
+      padding: 70px 0;
     }
 
     a {
@@ -30,25 +36,25 @@ export const Container = styled.div`
 export const CountryDetails = styled.div`
   margin-top: 70px;
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1000px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     > div {
-      width: 30%;
+      width: 48%;
     }
   }
 
   img {
-    @media (min-width: 1300px) {
-      width: 55%;
-      height: 20%;
-      margin-bottom: 0px;
-    }
-
     width: 100%;
     margin-bottom: 40px;
+    align-self: flex-start;
+    max-width: 560px;
+
+    @media (max-width: 1270px) {
+      max-width: 420px;
+    }
   }
 
   h1 {
@@ -57,8 +63,10 @@ export const CountryDetails = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  @media (min-width: 1300px) {
+  width: 87%;
+  @media (min-width: 800px) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
