@@ -18,6 +18,10 @@ export const Container = styled.div`
     @media (min-width: 500px) {
       padding: 20px 70px;
     }
+
+    @media (min-width: 1320px) {
+      padding: 20px 0;
+    }
   }
 
   h1 {

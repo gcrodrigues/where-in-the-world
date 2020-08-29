@@ -10,4 +10,7 @@ export const Main = styled.main`
   @media (min-width: 500px) {
     padding: 40px 70px;
   }
+  @media (min-width: 1320px) {
+    padding: 40px 0;
+  }
 `;
