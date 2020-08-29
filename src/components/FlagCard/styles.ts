@@ -25,16 +25,14 @@ export const Container = styled(Link)`
 
 export const Image = styled.div`
   width: 100%;
-  max-width: 400px;
   height: 100%;
-  max-height: 200px;
-  background-position: center;
+
   border-radius: 5px 5px 0 0;
 
   img {
     border-radius: 5px 5px 0 0;
     width: 100%;
-    /* max-width: 400px; */
+    object-fit: cover;
     height: 100%;
   }
 `;
